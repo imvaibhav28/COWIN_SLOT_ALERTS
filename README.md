@@ -10,4 +10,6 @@ pip -install numpy
 
 
 
-The above notebook can be edited and scheduled with a cron job or can be run under a ksh script
+The above notebook can be edited and scheduled with a cron job or can be run inside a ksh script
+
+nohup ./schedule_notebook.ksh &
