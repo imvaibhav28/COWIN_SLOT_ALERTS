@@ -1,12 +1,10 @@
 # COWIN_SLOT_ALERTS
-This repository contains jupyter notebook which can send alerts whenever the slot's are available in prvided center id
+This repository contains jupyter notebook which can send alerts whenever the slot's are available in provided center id
 
 Dependecies:
 pandas
 pip -install pandas
 
-numpy
-pip -install numpy
 
 Once you get your district id, cell no 3 and 4 can be commented out with hardcoding district id in next cell
 
@@ -17,4 +15,4 @@ nohup ./schedule_notebook.ksh &
 
 To get sms alerts, create an account on sinch and get key and password fron the dashboard
 
-This is just a template sript I used to get alerts for my nearest center
+This is just a template sript I used to get alerts for my nearest center 
