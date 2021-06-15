@@ -16,3 +16,5 @@ nohup ./schedule_notebook.ksh &
 To get sms alerts, create an account on sinch and get key and password fron the dashboard
 
 This is just a template sript I used to get alerts for my nearest center 
+
+Reference: https://apisetu.gov.in/public/marketplace/api/cowin
