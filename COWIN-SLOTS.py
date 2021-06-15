@@ -5,21 +5,15 @@
 
 
 import pandas as pd
-import numpy as np
+# import numpy as np
 import os
 import json
 from pandas.io.json import json_normalize
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-from email.mime.text import MIMEText
-from email.mime.application import MIMEApplication
-from email.mime.multipart import MIMEMultipart
-from smtplib import SMTP
-import smtplib
 import sys
 import datetime;
-import requests
 
 
 # Run below Cell to find  state code
@@ -83,10 +77,6 @@ format_data = response.json()
 slots_df=pd.json_normalize(format_data['sessions'])
 # slots_df=pd.json_normalize(format_data['centers']['sessions'])
 
-# newdf=pd.Series(flatten_json(format_data)).to_frame()
-# slots_df
-# newdf
-header_df=pd.json_normalize(format_data['sessions'])
 
 slots_df
 # index = queryList_df.index
@@ -116,57 +106,6 @@ for i in slots_df.index:
         response = requests.post('https://sms.api.sinch.com/xms/v1/*************/batches', headers=headers, data=data_json)
 #         print(response)
 
-
-
-# In[158]:
-
-
-
-
-
-# In[224]:
-
-
-
-
-
-# In[151]:
-
-
-
-
-
-# In[140]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[140]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
